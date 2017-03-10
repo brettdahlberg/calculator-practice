@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <!-- set the character set -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- first step to a responsive site -->
+        <title>Calculator Practice with Javascript</title>
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!--THESE ARE INSTRUCTIONS
+
+Create a Web page on which information is dynamically added from an external JavaScript file. Here's what you need to accomplish:
+
+Declare two numeric variables.
+Add them together using a JavaScript operator.
+Multiply them together using a JavaScript operator.
+Divide one by the other using a JavaScript operator.
+Subtract one from the other using a JavaScript operator.
+Create separate sentences for each mathematical operation that provides the results. For example, for addition, it should say something like "When I add firstVariable to secondVariable I get thirdVariable."
+You must use Functions and Jquery to make the sentence appear on a web page.
+Remember it has to be dynamic so if you change the value of the variables, the webpage should show updated results automatically.
+**Due: Tuesday 5pm in a .js file.-->
+
+        <!-- Your styles should be called here -->
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+    </head>
+
+    <body>
+        <!-- YOUR CONTENT GOES HERE -->
+        <h1>This Should Be a Javascript Calculator.</h1>
+        <p>Stick two numbers in here</p>
+        <form id="one">
+            <p><input type="number" id="a" />This is number a.</p>
+            <p><input type="number" id="b" />This is number b.</p>
+            <p>Now we'll do some stuff to a and b. Use the compute button to make it happen.</p>
+
+            <input type="button" id="button" value="compute">
+            <input type="button" id="reset" value="reload">
+
+            <p>When I add a to b, I get:</p>
+            <input type="number" id="sum" placeholder="sum">
+            <p>When I subtract b from a, I get:</p>
+            <input type="number" id="difference" placeholder="difference">
+            <p>When I multiply a and b, I get:</p>
+            <input type="number" id="product" placeholder="product">
+            <p>When I divide a by b, I get:</p>
+            <input type="number" id="quotient" placeholder="quotient">
+        </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+        <!-- Your javascript should be called here -->
+        <script src="main.js" type="text/javascript"></script>
+        <!-- Your javascript should be called here -->
+    </body>
+
+</html>

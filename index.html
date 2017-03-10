@@ -11,6 +11,8 @@
 
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
+        <link rel="stylesheet" type="text/css" href="main.css">
+
         <!--THESE ARE INSTRUCTIONS
 
 Create a Web page on which information is dynamically added from an external JavaScript file. Here's what you need to accomplish:
@@ -37,25 +39,38 @@ Remember it has to be dynamic so if you change the value of the variables, the w
 
     <body>
         <!-- YOUR CONTENT GOES HERE -->
-        <h1>This Should Be a Javascript Calculator.</h1>
-        <p>Stick two numbers in here</p>
-        <form id="one">
-            <p><input type="number" id="a" />This is number a.</p>
-            <p><input type="number" id="b" />This is number b.</p>
-            <p>Now we'll do some stuff to a and b. Use the compute button to make it happen.</p>
+        <div class="holdall">
+            <h1>This Should Be a Javascript Calculator.</h1>
 
-            <input type="button" id="button" value="compute">
-            <input type="button" id="reset" value="reload">
+            <div id="input">
+                <p>Stick a number in each of these boxes.</p>
 
-            <p>When I add a to b, I get:</p>
-            <input type="number" id="sum" placeholder="sum">
-            <p>When I subtract b from a, I get:</p>
-            <input type="number" id="difference" placeholder="difference">
-            <p>When I multiply a and b, I get:</p>
-            <input type="number" id="product" placeholder="product">
-            <p>When I divide a by b, I get:</p>
-            <input type="number" id="quotient" placeholder="quotient">
-        </form>
+
+
+                <form id="one">
+                    <p><input type="number" id="a" />This is number a.</p>
+                    <p><input type="number" id="b" />This is number b.</p>
+                    <p>Now we'll do some stuff to a and b. Use the compute button to make it happen.</p>
+
+                    <input type="button" id="button" value="compute">
+                    <!-- This button is called "reload." It resets the form. -->
+                    <input type="button" id="reset" value="reload">
+            </div>
+            <div id="output">
+                <div class="coverup">
+                    <p>When I add a to b, I get:</p>
+                    <input type="number" id="sum" placeholder="sum">
+                    <p>When I subtract b from a, I get:</p>
+                    <input type="number" id="difference" placeholder="difference">
+                    <p>When I multiply a and b, I get:</p>
+                    <input type="number" id="product" placeholder="product">
+                    <p>When I divide a by b, I get:</p>
+                    <input type="number" id="quotient" placeholder="quotient">
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
         <!-- Your javascript should be called here -->

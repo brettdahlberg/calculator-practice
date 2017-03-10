@@ -15,6 +15,8 @@ $(document).ready(function () {
 		$("#difference").val(sub);
 		$("#product").val(mult);
 		$("#quotient").val(divide);
+
+		$("#output").addClass("show");
 	})
 
 	// clear and reload.
@@ -48,3 +50,8 @@ function division(a, b) {
 	var divide = a / b;
 	return divide;
 }
+
+
+// Make the coverup box transparent after the "compute" button click.
+
+// Reset the coverup box to opaque after the "reload" button click.
